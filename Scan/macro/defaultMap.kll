@@ -1,0 +1,35 @@
+Name = MD1;
+Version = 0.3;
+Author = "HaaTa (Jacob Alexander) 2014-2015";
+KLL = 0.3c;
+
+# Modified Date
+Date = 2015-08-16;
+
+
+S0x00 : U"0";
+S0x01 : U"1";
+S0x02 : U"2";
+S0x03 : U"3";
+S0x04 : U"4";
+S0x05 : U"5";
+S0x06 : U"6";
+S0x07 : U"7";
+S0x08 : U"8";
+S0x09 : U"9";
+S0x0A : U".";
+S0x0B : U"Function1";
+U"Function1" : layerShift(1);
+S0x10+S0x11+S0x12 : flashMode();
+
+# Custom Action Examples
+
+# Example capability, prints to cli
+action1 => CustomAction_action1_capability(); # No arguments
+
+# Blocks given USB Code, must be used with blockLink
+# Simple example, supports only blocking a single key at a time
+# Keys must be specified using numbers see Macro/PartialMap/usb_hid.h
+blockHold => CustomAction_blockHold_capability( usbCode : 1 ); # Single 8-bit argument
+blockKey => CustomAction_blockKey_capability( usbCode : 1 );
+

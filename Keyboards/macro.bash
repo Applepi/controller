@@ -11,7 +11,7 @@
 
 # Feel free to change the variables in this section to configure your keyboard
 
-BuildPath="kiilulzing1"
+BuildPath="macro"
 
 ## KLL Configuration ##
 
@@ -29,8 +29,7 @@ DefaultMap="md1Overlay stdFuncMap"
 # e.g.  PartialMaps[1]="layer1 layer1mod"
 #       PartialMaps[2]="layer2"
 #       PartialMaps[3]="layer3"
-PartialMaps[1]="myconfig1"
-PartialMaps[2]="myconfig2"
+PartialMaps[1]="macro1"
 
 ##########################
 # Advanced Configuration #
@@ -41,13 +40,13 @@ PartialMaps[2]="myconfig2"
 # NOTE: Changing any of these variables will require a force build to compile correctly
 
 # Keyboard Module Configuration
-ScanModule="kiilulz"
+ScanModule="macro"
 MacroModule="PartialMap"
 OutputModule="pjrcUSB"
 DebugModule="full"
 
 # Microcontroller
-Chip="mk20dx128"
+Chip="mk20dx256"
 
 # Compiler Selection
 Compiler="gcc"

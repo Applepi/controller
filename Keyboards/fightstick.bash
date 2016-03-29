@@ -11,7 +11,7 @@
 
 # Feel free to change the variables in this section to configure your keyboard
 
-BuildPath="kiilulzing1"
+BuildPath="fightstick"
 
 ## KLL Configuration ##
 
@@ -29,8 +29,8 @@ DefaultMap="md1Overlay stdFuncMap"
 # e.g.  PartialMaps[1]="layer1 layer1mod"
 #       PartialMaps[2]="layer2"
 #       PartialMaps[3]="layer3"
-PartialMaps[1]="myconfig1"
-PartialMaps[2]="myconfig2"
+PartialMaps[1]="fightstick1"
+PartialMaps[2]="fightstick2"
 
 ##########################
 # Advanced Configuration #
@@ -41,7 +41,7 @@ PartialMaps[2]="myconfig2"
 # NOTE: Changing any of these variables will require a force build to compile correctly
 
 # Keyboard Module Configuration
-ScanModule="kiilulz"
+ScanModule="fightstick"
 MacroModule="PartialMap"
 OutputModule="pjrcUSB"
 DebugModule="full"
